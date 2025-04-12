@@ -1,0 +1,16 @@
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost:32000/secureapi
+    username: springboot
+    password: springboot
+    driverClassName: com.mysql.cj.jdbc.Driver
+access-token:
+  private: classpath:access-token.key
+  public: classpath:access-token.pub
+refresh-token:
+  private: classpath:refresh-token.key
+  public: classpath:refresh-token.pub
